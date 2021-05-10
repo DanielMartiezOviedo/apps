@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+    <ion-title>Notas</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/nota-input">
+        <ion-icon name="add" slot="icon-only"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Agregar nueva nota
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <!--
+
+<app-notas *ngFor="let message of getMessages()" message="message" ></app-notas>
+
+-->
+  </ion-list>
+</ion-content>
